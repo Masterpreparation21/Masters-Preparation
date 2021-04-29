@@ -1,118 +1,314 @@
-* {
-  font-family: "Raleway", sans-serif;
-  background-color: beige;
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.heading-content,
-.research-oriented,
-.career-oriented,
-.additional-info {
-  text-decoration: none;
-  padding: 20px 20px;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
-  margin-bottom: 1%;
-  overflow: hidden;
 }
-.masters {
-  text-decoration: none;
-  padding: 20px 20px;
-  display: list-item;
-  margin-bottom: 1%;
-  align-items: center;
+body {
+  line-height: 1;
 }
-.nav-buttons {
-  color: white;
-  background-color: black;
-  padding: 14px 25px;
-  text-align: left;
-  margin-right: 4px;
-  text-decoration: none;
-  display: block;
-  align-items: center;
-  margin-bottom: 1%;
-  font-family: monospace;
+ol,
+ul {
+  list-style: none;
 }
-.masters-buttons {
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* basic */
+/* BASIC */
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+.item p {
+  margin: 0 0 5px 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* start */
+body {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+.main_page {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Main-Head {
+  background-color: #022b3a;
+  color: #e1e5f2;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.masters-link {
-  color: white;
-  background-color: black;
-  padding: 14px 25px;
+.head {
+  width: 80%;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f7a8c;
+  width: 100%;
+  color: #e1e5f2;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
-  margin-right: 4px;
+  /* padding: 5px; */
+}
+
+.links a {
+  color: #e1e5f2;
   text-decoration: none;
-  display: block;
-  align-items: center;
-  margin-bottom: 1%;
-  font-family: monospace;
-}
-.masters-link:hover,
-.nav-buttons:hover {
-  background-color: grey;
-}
-.add-detail {
-  margin-left: 2%;
-}
-.country,
-.sub-head {
-  color: white;
-  background-color: navy;
-  padding: 14px 25px;
-  text-align: left;
-  text-decoration: none;
-  display: block;
-}
-.headings,
-.headingg {
-  background-color: rgb(12, 178, 184);
-  color: white;
-  padding: 14px 25px;
-  text-align: left;
-}
-.headingg {
-  background-color: rgb(2, 8, 39);
-  text-align: center;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0%;
-}
-.content {
-  padding: 12px 25px;
-  padding-top: 0;
-  display: none;
-}
-.research-oriented,
-.career-oriented {
-  padding-bottom: 0px;
-}
-
-.active {
-  display: none;
-}
-
-.main-nav {
-  background-color: rgb(202, 2, 2);
-  padding: 14px 25px;
-  text-align: left;
-  margin-right: 4px;
-}
-.main-nav:hover {
-  background-color: rgb(90, 0, 0);
-}
-
-.drive-btn {
-  border: 1px solid black;
-  border-radius: 10px;
+  flex: 1;
   padding: 10px;
-  background-color: black;
+  font-size: 1.2rem;
+  border-left: 1px solid #022b3a;
 }
-.drive-link {
-  background: none;
-  color: white;
+
+.link:nth-child(1) {
+  border: none;
+}
+
+.link:hover {
+  background-color: #022b3a;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-top: 20px;
+  color: #1f7a8c;
+}
+
+p {
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #1f7a8c;
+  text-decoration-line: underline;
+}
+h4::before {
+  content: "★";
+  padding-right: 5px;
   text-decoration: none;
-  font-size: 15px;
 }
-.drive-btn:hover {
-  background-color: grey;
+h4 {
+  font-size: 1.3rem;
+  color: #1f7a8c;
+  text-decoration-line: underline;
+}
+.countries {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.countries a {
+  display: flex;
+  flex: 3;
+  height: 2.5rem;
+  text-decoration: none;
+  color: #e1e5f2;
+  background-color: #022b3a;
+  margin: 3px;
+  border: 0.1px solid #022b3a;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.countries a:nth-child(3) {
+  flex: 4;
+}
+
+.college-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.college {
+  flex-basis: 15rem;
+  height: 12rem;
+  background-color: #e1e5f2;
+  border: 2px solid #1f7a8c;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.college span{
+  font-size: 1.3rem;
+  color: #022b3a;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.college ol {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.college ol li {
+  list-style: circle;
 }
