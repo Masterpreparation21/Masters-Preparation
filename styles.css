@@ -271,6 +271,7 @@ h4 {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
 }
 
 .countries a:nth-child(3) {
@@ -311,4 +312,30 @@ h4 {
 
 .college ol li {
   list-style: circle;
+}
+
+.active{
+  display: none;
+}
+
+ol{
+  padding: 20px;
+}
+
+ol span{
+  font-size: 1.2rem;
+  color: #1f7a8c;
+}
+
+button{
+  background-color: #022b3a;
+  border:1px solid #022b3a;
+  border-radius: 10px;
+  height: 1.5rem;
+  margin: 10px;
+}
+
+button a {
+  color:#e1e5f2;
+  text-decoration: none;
 }
