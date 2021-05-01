@@ -1,4 +1,4 @@
-var contents = document.querySelectorAll(".content");
+var contents = document.querySelectorAll(".dropdown_content");
 var heads = document.querySelectorAll(".drop_down");
 
 for (let i = 0; i < heads.length; i++) {
