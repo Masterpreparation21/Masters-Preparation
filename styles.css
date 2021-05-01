@@ -12,7 +12,6 @@ h3,
 h4,
 h5,
 h6,
-
 p,
 blockquote,
 pre,
@@ -254,17 +253,23 @@ h4 {
   padding-top: 20px;
   padding-left: 2opx;
 }
-.countries {
+.countries,.btns {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: auto;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding: 30px;
+  width: 100%;
 }
 
-.countries a {
+.countries a,.btns button {
   display: flex;
-  flex: 3;
+  flex-wrap: wrap;
+  min-width: 8rem;
+  max-width: 15rem;
+  flex: 1;
   height: 2.5rem;
   text-decoration: none;
   color: #e1e5f2;
@@ -277,11 +282,21 @@ h4 {
   font-size: 0.8rem;
 }
 
-.countries a:nth-child(3) {
-  flex: 4;
+button a{
+  color: #e1e5f2;
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
-.college-list{
+.countries a:hover,.btns button:hover{
+  background-color: #1f7a8c;
+}
+
+.countries a:hover span{
+  transform: scale(1.2);
+}
+
+.college-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -301,7 +316,7 @@ h4 {
   flex-direction: column;
 }
 
-.college span{
+.college span {
   font-size: 1.3rem;
   color: #022b3a;
   text-align: center;
@@ -317,45 +332,36 @@ h4 {
   list-style: circle;
 }
 
-.active{
+.active {
   display: none;
 }
 
-ol{
+ol {
   padding: 20px;
 }
 
-.blue{
+.blue {
   color: #0036e9;
 }
 
-ol span{
+ol span {
   font-size: 1.2rem;
-  
 }
 
-button{
-  background-color: #022b3a;
-  border:1px solid #022b3a;
-  border-radius: 10px;
-  height: 1.5rem;
-  margin: 10px;
+btns{
+
 }
 
-button a {
-  color:#fdb57a;
-  text-decoration: none;
+h5::before {
+  content: "*";
+  color: var(--black);
 }
-h5::before{
-content: "*";
-color: var(--black);
-}
-h5{
+h5 {
   font-size: 1.3rem;
   color: #0036e9;
   padding-left: 20px;
-} 
-h6{
+}
+h6 {
   font-size: 1.3rem;
   padding-top: 40px;
- }
+}
