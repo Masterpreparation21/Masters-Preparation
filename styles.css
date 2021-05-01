@@ -196,7 +196,27 @@ body {
 }
 .head {
   width: 80%;
+  display: flex;
 }
+.head h1 {
+  flex: 10;
+}
+.aspirant_btn {
+  background: none;
+  border: none;
+  flex: 1;
+  justify-content: flex-end;
+  border: 1px solid #1f7a8c;
+  border-radius: 20px;
+}
+
+.aspirant_btn:hover {
+  background-color: #1f7a8c;
+}
+.aspirant_tag {
+  font-size: 0.8rem;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -253,7 +273,8 @@ h4 {
   padding-top: 20px;
   padding-left: 2opx;
 }
-.countries,.btns {
+.countries,
+.btns {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -264,7 +285,8 @@ h4 {
   width: 100%;
 }
 
-.countries a,.btns button {
+.countries a,
+.btns button {
   display: flex;
   flex-wrap: wrap;
   min-width: 8rem;
@@ -282,17 +304,18 @@ h4 {
   font-size: 0.8rem;
 }
 
-button a{
+button a {
   color: #e1e5f2;
   text-decoration: none;
   font-size: 0.8rem;
 }
 
-.countries a:hover,.btns button:hover{
+.countries a:hover,
+.btns button:hover {
   background-color: #1f7a8c;
 }
 
-.countries a:hover span{
+.countries a:hover span {
   transform: scale(1.2);
 }
 
@@ -346,10 +369,6 @@ ol {
 
 ol span {
   font-size: 1.2rem;
-}
-
-btns{
-
 }
 
 h5::before {
