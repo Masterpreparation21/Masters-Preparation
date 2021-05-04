@@ -384,3 +384,17 @@ h6 {
   font-size: 1.3rem;
   padding-top: 40px;
 }
+
+.bullet p::before {
+  content: '➤';
+  color: #022b3a;
+}
+
+.bullet p.sub {
+  padding-left: 40px;
+}
+
+.bullet p.sub::before {
+  content: '';
+}
+
