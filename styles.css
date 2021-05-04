@@ -386,7 +386,7 @@ h6 {
 }
 
 .bullet p::before {
-  content: '➤';
+  content: "➤";
   color: #022b3a;
 }
 
@@ -395,6 +395,21 @@ h6 {
 }
 
 .bullet p.sub::before {
-  content: '';
+  content: "";
 }
 
+.extra_btn {
+  color: #1f7a8c;
+  text-decoration-line: underline;
+}
+.extra_btn:hover {
+  cursor: pointer;
+}
+.extra_btn::after {
+  content: "  (click here)";
+}
+
+.adv li{
+  padding-left: 20px;
+  list-style: none;
+}
